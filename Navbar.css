@@ -1,0 +1,319 @@
+body {
+    background-color: rgb(250, 187, 92);
+    background-image: url(./landing-technology-domains-capabilities-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flexbox;
+    filter: saturate(100px);
+    box-sizing: border-box;
+    height: auto;
+
+}
+
+#HEZ {
+    border-radius: 50%;
+    float: right;
+    filter: saturate(130%);
+
+}
+
+img:hover {
+    opacity: 0.6;
+
+}
+
+.topnav {
+    background-color: rgba(3, 1, 37, 0.575);
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    height: 80px;
+    -webkit-transition: width 2s;
+    transition: 2s;
+
+}
+
+.topnav {
+    transition-timing-function: ease-in;
+}
+
+.topnav :any-link {
+    font-size: 1.4rem;
+}
+
+.active {
+    background-color: transparent;
+
+}
+
+.topnav:hover {
+    width: fit-content;
+}
+
+.topnav a {
+    float: left;
+    color: rgb(247, 242, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /* font-size: 17px; */
+}
+
+.topnav a:hover {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+.Write {
+    display: flexbox;
+    text-align: center;
+    text-shadow: 5px 5px 2px brown;
+    color: rgb(251, 255, 6);
+    position:absolute;
+    top: 150px;
+    left: 400px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    width: 2rem;
+    height: 100px;
+
+
+}
+
+.Write button {
+    padding: 20px;
+    width: 120px;
+    background-color: rgb(2, 6, 46);
+    color: rgb(255, 251, 0);
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.Write button:hover {
+    color: bisque;
+    background-color: rgb(112, 23, 23);
+}
+
+.About {
+    padding: 50px;
+    display: flexbox;
+    background-color: #000000de;
+    color: rgb(250, 250, 250);
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid gold;
+    border-radius: 50px;
+    box-shadow: 10px 5px 10px;
+    width: 700px;
+    height: 50dvh;
+    margin: 50px 25%;
+}
+
+.em {
+    color: rgb(229, 255, 0);
+}
+
+.Contact {
+    padding: 50px;
+    height: 50dvh;
+    margin: 10px 30%;
+    background-color: rgba(231, 124, 124, 0.692);
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(6, 6, 77);
+    border-radius: 50px;
+    box-shadow: 5px 5px #000000de;
+}
+
+.Contact img {
+    position: relative;
+    top: 30px;
+    /* right: 400px; */
+    margin-right: 6px;
+    display: flex;
+}
+
+.projects {
+    padding: 5px;
+    margin: 0px;
+    background-color: rgba(1, 1, 43, 0.658);
+    color: rgb(237, 245, 2);
+    display: flexbox;
+
+}
+
+.projects h1 {
+    text-align: center;
+    text-decoration: overline;
+}
+
+.Bril,
+.Book {
+
+    display: flex;
+    margin: 0.2%;
+    height: 33dvh;
+    
+}
+.Bril img{
+    border-radius: 20px;
+    margin: 10px;
+    filter: saturate(130%);
+}
+.Book img{
+    border-radius: 20px;
+    margin: 10px;
+    filter: saturate(150%);
+}
+
+#svg {
+
+    gap: 100px;
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 40%;
+}
+
+/* @media (min-width) {
+    .topnav{
+        width: 90% !important;
+        height: auto;
+        font-size: 0.5rem;
+        display: flex;
+       
+    }
+    h1{
+        font-size: medium;
+        color: aqua;
+
+    }
+    .contacts {
+        width: 100%;
+    }
+
+    .Projects {
+        width: 100%;
+    }
+
+    .Bril,
+    .Book {
+        width: 90%;
+    }
+} */
+
+@media screen and (max-height: 600px) {
+    .topnav{
+        width: 90% !important;
+    }
+    #HEZ{
+        max-width: 500px;
+        min-width: 200px;
+    }
+    h1{
+        font-size: auto;
+    
+    }
+    .Contact {
+        width: 90%;
+        height:auto;
+        display: flexbox;
+        margin: auto;
+       
+    }
+
+    .Projects {
+        width: 100%;
+    }
+
+    .Bril,
+    .Book {
+        width: 90%;
+    }
+
+    #svg {
+        gap: 50px;
+        display: flex;
+        position: absolute;
+        bottom: 20px;
+        margin-left: 40%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .topnav{
+        width: 90% !important;
+        height: auto;
+        display: flex;
+
+    }
+    #HEZ{
+        max-width: 500px;
+        min-width: 200px;
+    }
+    .Contact {
+        width: 90%;
+        height:auto;
+        display: flexbox;
+        margin: auto;
+       
+    }
+    
+
+    .Projects {
+        width: 100%;
+    }
+
+    .Bril,
+    .Book {
+        width: 90%;
+    }
+
+    #svg {
+        gap: 30px;
+        display: flex;
+        position: absolute;
+        bottom: 20px;
+        margin-left: 40%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .topnav{
+        width: 90% !important;
+    }
+    h1{
+        font-size: 1rem;
+    
+    }
+    #HEZ{
+        max-width: 500px;
+        min-width: 200px;
+    }
+    .Contact {
+        width: 90%;
+        height:auto;
+        display: flexbox;
+        margin: auto;
+       
+    }
+
+    .Projects {
+        width: 100%;
+    }
+
+    .Bril,
+    .Book {
+        width: 90%;
+    }
+
+    #svg {
+        gap: 20px;
+        display: flex;
+        position: absolute;
+        bottom: 20px;
+        margin-left: 40%;
+    }
+}
